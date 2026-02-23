@@ -1,0 +1,31 @@
+.section { display:none; }
+.active { display:block; }
+
+.hero {
+background: linear-gradient(135deg,#4e73df,#1cc88a);
+color:white;
+border-radius:10px;
+}
+
+.card { margin-bottom:15px; transition:0.3s; }
+.card:hover { transform:scale(1.03); }
+
+.fade-in { animation:fadeIn 0.4s ease-in-out; }
+@keyframes fadeIn {
+from {opacity:0; transform:translateY(10px);}
+to {opacity:1; transform:translateY(0);}
+}
+
+body.dark {
+background:#121212;
+color:white;
+}
+body.dark .card { background:#1e1e1e; }
+
+footer {
+margin-top:50px;
+padding:20px;
+background:#343a40;
+color:white;
+text-align:center;
+}
